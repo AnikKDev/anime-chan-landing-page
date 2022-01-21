@@ -1,0 +1,50 @@
+body{
+    background-color: #233134;
+}
+.section-1{
+    /* height: calc(100vh - 56px); */
+}
+.services-icon{
+    font-size: 4em;
+    
+}
+.service-card{
+    border:none;
+    background-color: #212529;
+    color: white;
+}
+.service-card:hover{
+    border: none;
+    background-color: #fff;
+    color: black;
+    transition: 0.7s;
+    box-shadow: 10px 10px 30px black;
+    transform: scale3d(1.01, 1.01, 1.01);
+}
+.service-card:hover .services-icon{
+    transition: transform 0.5s ease-out;
+    transform: rotateY(360deg);
+}
+.commitment{  
+    position: relative;
+}
+.commitment::after{
+    content: "";
+    background-image: url(./img/bg-2.jpg);
+    position: absolute;
+    top: 0;
+    left:0;
+    background-size: 100% 100%;
+    
+    width: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    opacity: 0.5;
+}
+.social-icons{
+    padding: 0 10px;
+    color: #DADDDE;
+    font-weight: bold;
+}
